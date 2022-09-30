@@ -1,0 +1,84 @@
+ <html>
+	<head>
+		<script>
+			function fetch(){;
+
+			var choice=parseInt(document.getElementById("choice")).value
+			switch(choice){
+			{
+				case 1:
+					create account();
+				break;
+				
+				case 2:
+					deposit();
+				break;
+				
+				case 3
+					withdraw();
+				break;
+				
+				case 4
+					show balance();
+				break;
+				default:
+					document.write("Invalid choice");
+			}
+		}
+			var accountNo
+			function create account(){
+				var  name, pan, random1, temp,acc_no; 
+				name=prompt("Enter your full name:")
+				init deposit=parseInt(prompt("enter your initial deoposit:"))
+				pan=parseInt(prompt("Enter your PAN number:"))
+				document.getElementById("result").innerHTML +="your name :"+name+"<br/>"
+				document.getElementById("result").innerHTML +="your deposit :"+init_deposit+"<br/>"
+				document.getElementById("result").innerHTML +="your PAN card nos :"+pan+"<br/>"
+				acc_no =math.floor(math.random()*10050230050)
+				document.getElementById("result").innerHTML +="your new account number is :"+temp+"<br/>"
+				random=math.round(math.random()*23055)
+				document.getElementById("result").innerHTML +="Thanks for creating an Account "+name+"<br/>"
+			}
+			function deposit()
+			{
+				var acc_no, pin, deposit
+				accno=parseInt(prompt("Enter your Account number:"))
+				if(acc_no)
+				{
+					alert("success")
+				}
+				else
+				{
+					alert("Incorrect Account number")
+				}
+			}
+			function withdraw()
+			{
+			
+			}
+			function show balance()
+			{
+				var accno,pin
+				acc_no=parseInt(prompt("Enter your Account number:"))
+				pin=parseInt(prompt("Enter pin:"))
+				document.getElementById ("result").innerHTML +="your Account Balance is :+init_deposit"
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Bank Account</h1>
+		<ol type="1">
+			<li>create Account</li>
+			<li>deposit</li>
+			<li>withdraw</li>
+			<li>show balance</li>
+		</ol>
+			<form>
+				<label>Enter any number</label>
+				<input type="button" onclick="acc()"><br>
+				
+				<input type="button" value="calculate" onclick="calculate()">
+				
+			</form>
+	</body>
+ </html>

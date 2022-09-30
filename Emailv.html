@@ -1,0 +1,29 @@
+<html>
+	<head>
+	</head>
+	<body>
+	<script>
+		function validetmail(inputtxt)
+		{
+			var mailformat=/^[A-Za-z\s]+([\.-]?\[0-9])*@\[a-z]+([\.-]?\[a-z]+)()\.\[a-z]{2,4})+$/;
+			{
+				alert('validate email address!');
+				document.form1.text1.focus();
+				return false;
+			}
+			else
+			{
+				alert("you have entered invalid email address!");
+				return false;
+			}
+		}
+	</script>
+	<input type="text" name="text1">
+	<input type="submit" name="submit" value="submit" onclick"validateEmail(document.form.text1)">
+	
+	</body>
+</html>
+	
+		
+			
+			
